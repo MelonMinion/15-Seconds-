@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 01. Highway
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 1
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 66ab94fa7dbd2aa40aca20504d526ed7, type: 3}
+    - {fileID: 2800000, guid: 9d807c5d68b5a93468c8c999aafa282a, type: 3}
+    - {fileID: 2800000, guid: b0537974922a49b429ef36def71c706c, type: 3}
+    - {fileID: 2800000, guid: 10269be726be3db4186aaf8bc45432aa, type: 3}
+    - {fileID: 2800000, guid: 7081544f98c07244daa3e5a821edc01c, type: 3}
+    - {fileID: 2800000, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+    - {fileID: 2800000, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+    - {fileID: 2800000, guid: 97200a2e1a237cc4d9da1436c0958973, type: 3}
+    - {fileID: 2800000, guid: 83695c3b94548034b8fe71f3cecede6f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b0537974922a49b429ef36def71c706c, type: 3}
+  - {fileID: -651837330644533449, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 8575060598113427243, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 840209107006126019, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 1475882884464721297, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -4385940697307397259, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 1681347529106338658, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -4859453309260679718, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 4172729435604279176, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -6012664090310167627, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 8448467374028898296, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 4273724031106649725, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -6534835794917700975, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -7100396436553492122, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -12458071100697612, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: -5307525415327232079, guid: 666bf3a5d9cfea1479953504423e684e, type: 3}
+  - {fileID: 21300000, guid: 10269be726be3db4186aaf8bc45432aa, type: 3}
+  - {fileID: 21300000, guid: 66ab94fa7dbd2aa40aca20504d526ed7, type: 3}
+  - {fileID: 21300000, guid: 83695c3b94548034b8fe71f3cecede6f, type: 3}
+  - {fileID: 21300000, guid: 9d807c5d68b5a93468c8c999aafa282a, type: 3}
+  - {fileID: 21300000, guid: 97200a2e1a237cc4d9da1436c0958973, type: 3}
+  - {fileID: 21300000, guid: 7081544f98c07244daa3e5a821edc01c, type: 3}
+  - {fileID: 4953392464234595647, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -8619348446800743242, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 7261158234278915470, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -3777419793671674668, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -8787460764905228719, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 649253095758724386, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 2599148473989436284, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -6396896257372478142, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 3895334394683256171, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -5552566630535393643, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 2333033326731769977, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 4368894584928625514, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -4706615070422907104, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: -417442752117080645, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  - {fileID: 1539683706341428000, guid: 1f2585bf4404fcc4caecf81562d01735, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - roadLight
+  - Car 1_14
+  - Car 1_12
+  - Car 1_13
+  - Car 1_10
+  - Car 1_11
+  - Car 1_9
+  - Car 1_8
+  - Car 1_3
+  - Car 1_2
+  - Car 1_1
+  - Car 1_0
+  - Car 1_7
+  - Car 1_6
+  - Car 1_5
+  - Car 1_4
+  - side
+  - background
+  - Gampoint Panel
+  - roadDark
+  - Gamepoint
+  - warning
+  - Enemy Car_8
+  - Enemy Car_9
+  - Enemy Car_6
+  - Enemy Car_7
+  - Enemy Car_4
+  - Enemy Car_5
+  - Enemy Car_2
+  - Enemy Car_3
+  - Enemy Car_0
+  - Enemy Car_1
+  - Enemy Car_14
+  - Enemy Car_11
+  - Enemy Car_10
+  - Enemy Car_13
+  - Enemy Car_12
+  m_RenderDataMap: {}
+  m_Tag: 01. Highway
+  m_IsVariant: 0
