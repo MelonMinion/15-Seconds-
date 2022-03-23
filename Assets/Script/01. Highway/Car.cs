@@ -12,6 +12,7 @@ public class Car : MonoBehaviour
     public bool Crash = false;
     float minRoad;
     bool canMove = true;
+
     private void Awake() {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -20,11 +21,12 @@ public class Car : MonoBehaviour
     }
 
     private void Start() {
+        //플레이어 시작 라인 선택
         if(minigameManager.lineIndex % 2 == 1) transform.position = new Vector3(0, 0, 0);
         else transform.position = new Vector3(-0.8f, 0, 0);
         minRoad = (((minigameManager.lineIndex + 1) * 0.8f) - (1.6f * (minigameManager.lineIndex)));
         
-        audioSource.Play();
+        audioSource.Play(); //오디오 재생
     }
     private void Update() {
         float h = Input.GetAxisRaw("Horizontal"); //왼쪽 오른쪽 구분
@@ -43,7 +45,7 @@ public class Car : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Enemy"){
+        if(other.tag == "Enemy"){ //적과 부딪혔을 때
             animator.SetTrigger("doExplode");
             Crash = true;
             canMove = false;

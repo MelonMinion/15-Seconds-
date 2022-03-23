@@ -35,6 +35,7 @@ public class BackgroundScroll : MonoBehaviour
             endIndex = (startIndexSave - 1 == -1) ? sprites.Length - 1 : startIndexSave - 1;
         }
 
+        //차에 부딪히면 슬라이드 중지
         if(car.Crash) speed = 0;
     }
 }

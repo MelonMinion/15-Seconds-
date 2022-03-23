@@ -99,9 +99,10 @@ public class MinigameManager : MonoBehaviour
         for(int i = 0; i < 3; i++)
             road.transform.GetChild(i).gameObject.SetActive(true);
 
-        
+        //차 없는 라인 선택
         noCarLine = Random.Range(1, lineIndex + 1);
 
+        //게임 포인트 라인 선택
         pointPercent = Random.Range(1, 11);
         if(pointPercent <= 3){
             while(true){
@@ -112,25 +113,27 @@ public class MinigameManager : MonoBehaviour
     }   
 
     private void Update() {
-        timer += Time.deltaTime;
+        timer += Time.deltaTime; //타이머 실행
 
+        //3초후 경고 사인
         if(timer > 3){
             whistle = true;
             if(!panelSet){
                 panelSet = true;
                 for(int i = 1; i < lineIndex + 1; i++){
                     if(i == gamePointLine){
-                        GameObject obj = Instantiate(gamePointPanel, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 0, 0), warningPanel.transform.rotation) as GameObject;
-                        GameObject obj2 = Instantiate(gamePoint, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 6.5f, 0), warningPanel.transform.rotation) as GameObject; 
+                        GameObject obj = Instantiate(gamePointPanel, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 0, 0), gamePointPanel.transform.rotation) as GameObject;
+                        GameObject obj2 = Instantiate(gamePoint, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 6.5f, 0), gamePoint.transform.rotation) as GameObject; 
                     }
                     else if(i != noCarLine){
                         GameObject obj = Instantiate(warningPanel, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 0, 0), warningPanel.transform.rotation) as GameObject;
-                        GameObject obj2 = Instantiate(enemyCar, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 6.5f, 0), warningPanel.transform.rotation) as GameObject; 
+                        GameObject obj2 = Instantiate(enemyCar, new Vector3(((lineIndex + 1) * 0.8f - (1.6f * ((lineIndex + 1) - i))), 6.5f, 0), enemyCar.transform.rotation) as GameObject; 
                     }
                 }  
             }
         }
 
+        //게임 클리어 선언
         if(timer > 7){
             if(isClear){
                 SceneManager.LoadScene("testCount");

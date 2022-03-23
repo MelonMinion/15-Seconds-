@@ -20,13 +20,13 @@ public class GamePoint : MonoBehaviour
     private void Update() {
         timer += Time.deltaTime;
 
-        if(timer > 1.3f){
+        if(timer > 1.3f){ //GP 슬라이드 다운
             Vector3 curPos = transform.position;
             Vector3 nextPos = Vector3.down * pointSpeed * Time.deltaTime;
             transform.position = curPos + nextPos;   
         }    
 
-        if(getPoint){
+        if(getPoint){ //플레이어가 획득 시
             Vector3 curPos = transform.position;
             Vector3 nextPos = Vector3.up * getPointSpeed * Time.deltaTime;
             transform.position = curPos + nextPos;
@@ -34,7 +34,7 @@ public class GamePoint : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Player"){
+        if(other.tag == "Player"){ //플레이어와 부딪혔을 때
             pointSpeed = 0;
             animator.SetTrigger("getPoint");
             getPoint = true;

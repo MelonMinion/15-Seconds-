@@ -21,8 +21,9 @@ public class EnemyCar : MonoBehaviour
         minigameManager = GameObject.Find("MinigameManager").GetComponent<MinigameManager>();
     }
     private void Update() {
-        timer += Time.deltaTime;
+        timer += Time.deltaTime; //타이머 실행
 
+        //차 소리 재생
         if(timer > 0.6f){
             if(minigameManager.whistle){
                 if(isWindSound == false){
@@ -34,6 +35,7 @@ public class EnemyCar : MonoBehaviour
             }
         }
 
+        //차 이동
         if(timer > 1.3f){
             Vector3 curPos = transform.position;
             Vector3 nextPos = Vector3.down * carSpeed * Time.deltaTime;
@@ -42,14 +44,16 @@ public class EnemyCar : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Player"){
-            audioSource.PlayOneShot(carCrash, 0.75f);
+    private void OnTriggerEnter2D(Collider2D other) { 
+        if(other.tag == "Player"){ //플레이어와 부딪혔을 때
+            audioSource.PlayOneShot(carCrash, 1f);
             carSpeed = 0;
             animator.SetTrigger("doExplode");
         }
-        else if(other.tag == "MinigameManager"){
-            gameObject.SetActive(false);
-        }
+    }
+
+    void Disable()
+    {
+        gameObject.SetActive(false);
     }
 }

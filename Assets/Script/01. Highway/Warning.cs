@@ -14,10 +14,10 @@ public class Warning : MonoBehaviour
     }
 
     private void Start() {
-        animator.SetTrigger("doActive");
+        animator.SetTrigger("doActive"); //시작과 동시에 애니메이션 재생
     }
     
-    void Whistle(){
+    void Whistle(){ //소리 재생
         audioSource.volume = 0.5f / (minigameManager.lineIndex - 2);
         if(minigameManager.whistle) audioSource.Play();
     }
